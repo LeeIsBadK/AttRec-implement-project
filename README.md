@@ -56,21 +56,47 @@ Key features:
 - GPU-enabled machine (recommended for training)
 
 ### Installation
-1. Clone the repository:
+### Getting Started
+
+For environment management, we recommend using [conda](https://docs.conda.io/projects/conda/en/latest/glossary.html?highlight=environment#conda-environment), and for development, [VS Code](https://code.visualstudio.com/) is suggested. Follow these steps to install the recommenders package and run a sample notebook on Linux/WSL:
+
+1. **Install GCC**  
+   If GCC is not already installed, you can install it on Ubuntu with:  
    ```bash
-   git clone https://github.com/your_username/attrec.git
-   cd attrec
+   sudo apt install gcc
    ```
 
-2. Install the required packages:
+2. **Set Up a Conda Environment**  
+   Create and activate a new Conda environment:  
    ```bash
-   pip install -r requirements.txt
+   conda create -n <environment_name> python=3.9
+   conda activate <environment_name>
    ```
 
-3. Install the project package:
+3. **Install the Recommenders Package**  
+   Install the core `recommenders` package to run all CPU-compatible notebooks:  
    ```bash
-   pip install -e .
+   pip install recommenders
    ```
+
+4. **Create a Jupyter Kernel**  
+   Set up a Jupyter kernel for the environment:  
+   ```bash
+   python -m ipykernel install --user --name <environment_name> --display-name <kernel_name>
+   ```
+
+5. **Clone the Repository**  
+   Clone the repository using VS Code or the command line:  
+   ```bash
+   git clone https://github.com/recommenders-team/recommenders.git
+   ```
+
+6. **Run an Example Notebook in VS Code**  
+   - Open a notebook, such as `examples/00_quick_start/sar_movielens.ipynb`.  
+   - Select the Jupyter kernel `<kernel_name>`.  
+   - Run the notebook.  
+
+This setup ensures you have everything needed to start working with the `recommenders` package efficiently.
 
 ---
 
