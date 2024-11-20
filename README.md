@@ -92,7 +92,7 @@ For environment management, we recommend using [conda](https://docs.conda.io/pro
    ```
 
 6. **Run an Example Notebook in VS Code**  
-   - Open a notebook, such as `examples/00_quick_start/sar_movielens.ipynb`.  
+   - Open a notebook, such as `attrec.ipynb`.  
    - Select the Jupyter kernel `<kernel_name>`.  
    - Run the notebook.  
 
