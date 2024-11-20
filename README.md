@@ -56,7 +56,6 @@ Key features:
 - GPU-enabled machine (recommended for training)
 
 ### Installation
-### Getting Started
 
 For environment management, we recommend using [conda](https://docs.conda.io/projects/conda/en/latest/glossary.html?highlight=environment#conda-environment), and for development, [VS Code](https://code.visualstudio.com/) is suggested. Follow these steps to install the recommenders package and run a sample notebook on Linux/WSL:
 
