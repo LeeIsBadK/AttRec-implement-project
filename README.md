@@ -9,11 +9,8 @@ Link: [https://arxiv.org/pdf/1808.06414](https://arxiv.org/pdf/1808.06414)
 ## Table of Contents
 1. [Project Overview](#project-overview)  
 2. [Project Structure](#project-structure)  
-3. [Setup and Installation](#setup-and-installation)  
-4. [Usage](#usage)  
-    - [Data Preparation](#data-preparation)  
-    - [Train the Model](#train-the-model)  
-    - [Evaluate the Model](#evaluate-the-model)  
+3. [Setup and Installation](#setup-and-installation)
+4. [Experimentation](#Experimentation) 
 5. [References](#references)  
 6. [Acknowledgments](#acknowledgments)  
 
@@ -77,26 +74,7 @@ Key features:
 
 ---
 
-## Usage
-### Data Preparation
-Ensure your data is placed in the `processed_data/` directory with the following format:
-- **`train.csv`**: Training dataset
-- **`test.csv`**: Test dataset
-- **`info.pkl`**: Metadata file (if applicable)
-
-### Train the Model
-Train the model with a default configuration:
-```bash
-python recommenders/models/train.py --data_dir processed_data --save_dir save_path
-```
-
-### Evaluate the Model
-Evaluate a trained model on test data:
-```bash
-python recommenders/evaluation/evaluate.py --model_dir save_path --test_data processed_data/test.csv
-```
-
-### Experimentation
+## Experimentation
 Use the included notebooks for interactive exploration:
 - **`attrec.ipynb`**: Full implementation walkthrough for AttRec.
 - **`ncf_deep_dive.ipynb`**: Insights into Neural Collaborative Filtering. (From https://github.com/recommenders-team/recommenders)
